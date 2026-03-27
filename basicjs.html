@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Tasks</title>
+</head>
+<body>
+
+<p id="text">Hello</p>
+
+<button onclick="changeText()">Change</button>
+<button onclick="toggleStyle()">Toggle Style</button>
+<button onclick="printPage()">Print</button>
+
+<form onsubmit="submitForm(event)">
+    <input id="inputName" placeholder="Name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+var a = 10;
+let b = 20;
+const c = 30;
+
+console.log(a, b, c);
+
+function add(x, y) {
+    return x + y;
+}
+
+const sub = (x, y) => x - y;
+
+console.log(add(5, 3), sub(5, 3));
+
+alert("Welcome");
+
+let name = prompt("Enter your name");
+
+console.log(name);
+
+function changeText() {
+    document.getElementById("text").innerText = "Changed";
+}
+
+let toggle = false;
+
+function toggleStyle() {
+    let el = document.getElementById("text");
+    toggle = !toggle;
+    el.style.color = toggle ? "red" : "blue";
+    el.style.fontSize = toggle ? "30px" : "16px";
+    el.style.background = toggle ? "yellow" : "white";
+}
+
+document.getElementById("text").onmouseover = function () {
+    this.style.color = "green";
+};
+
+document.getElementById("text").onmouseout = function () {
+    this.style.color = "black";
+};
+
+function submitForm(e) {
+    e.preventDefault();
+    let val = document.getElementById("inputName").value;
+    if (val === "") {
+        alert("Enter name");
+    } else {
+        console.log("Form submitted", val);
+    }
+}
+
+function printPage() {
+    window.print();
+}
+</script>
+
+</body>
+</html>
