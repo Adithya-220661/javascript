@@ -1,0 +1,179 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+/*
+console.log("hi good morning; ");
+var a=10
+let b=20
+const c=5
+console.log("var is:",a);
+console.log("let is:",b);
+console.log("const is c:",c);
+*/
+
+
+
+/*
+const mulope=(a,b)=>
+{
+console.log("addition is: ",a+b)
+console.log("subtraction is: ",a-b)
+console.log("multiplication is: ",a*b)
+console.log("division is: ",a/b)
+}
+mulope(4,2);
+*/
+
+
+/*
+function show_alert()
+{
+alert("Iam an alert box");
+}
+show_alert();
+
+function show_prompt()
+{
+var name=prompt("Please enter your name","Adithya");
+if(name!=null)
+	{
+	console.log("hello ",name);
+	}
+}
+show_prompt();
+console.log("debugging message!");
+*/
+
+
+/*
+function changeText() {
+    document.getElementById("text").innerText = "The text has been changed!";
+}
+
+function addContent() {
+    document.getElementById("container").innerHTML += "<p>New dynamic content added!</p>";
+}
+
+function removeContent() {
+    document.getElementById("container").innerHTML = "";
+}
+*/
+
+
+/*
+let toggle=false;
+function toggling()
+{
+const t=document.getElementById("target");
+if(!toggle){
+t.style.color='teal';
+t.style.background='pink';
+t.style.fontSize="48px";
+}
+else {
+t.style.color='maroon'
+t.style.background="blue";
+t.style.fontSize="20px";
+}
+toggle=!toggle;
+}
+*/
+
+
+/*
+function onclick_event()
+{
+console.log("button clicked");
+}
+function hover_event()
+{
+document.getElementById("hovers").style.color='teal';
+}
+function out_event()
+{
+document.getElementById("outs").style.color='maroon';
+}
+function forms(event)
+{
+event.preventDefault();
+console.log('form submitted');
+}
+*/
+
+
+/*
+function ask_prompt()
+{
+var name=prompt("enter the name","Adithya");
+alert("hi ",name);
+}
+ask_prompt();
+function forming(event)
+{
+event.preventDefault();
+let name=document.getElementById('name').value.trim();
+let email=document.getElementById('mail').value.trim();
+alert("form submitted successfully");
+}
+*/
+
+
+
+</script>
+</head>
+<body>
+
+<!--
+<p id="text">Adithya</p>
+<button onclick="changeText()">Change Text</button>
+<button onclick="addContent()">Add Content</button>
+<button onmouseover=hover_event()>hover button</button>
+<div id="container"></div>
+-->
+
+<!--
+<p id="target">changing colors and fonts</p>
+<button onclick='toggling()'>toggle button</buttton>
+-->
+
+
+<!--
+<button onclick="onclick_event()">click</button>
+<p id="hovers">You are hovring the mouse</p>
+<button onmouseover='hover_event()'>hover click</button>
+<p id="outs">you are out of the mouse</p>
+<button onmouseout="out_event()">out button</button>
+-->
+
+
+<!--
+<form onsubmit='forms(event)'>
+<input type='text' placeholder='type'>
+<button type='submit'>submit</button>
+</form>
+-->
+
+
+<!--
+<form onsubmit='forming(event)'>
+<input id='name' type='text' placeholder='enter the name'>
+<input id='mail' type='text' placeholder='enter the id'>
+<button type='submit'>submit</button>
+</form>
+<button onclick="print()">Print Page</button>
+-->
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
